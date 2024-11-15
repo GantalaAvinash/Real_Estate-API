@@ -27,11 +27,6 @@ router.get("/wishlist/:page", requireSignin, ad.wishlist);
 router.post("/search-ads", ad.searchAds);
 
 // admin route
-router.put(
-  "/toggle-published/:adId",
-  requireSignin,
-  isAdmin,
-  ad.togglePublished
-);
+router.put("/toggle-published/:adId",requireSignin,isAdmin,ad.togglePublished);
 
 export default router;

@@ -38,7 +38,7 @@ mongoose
     // global error handler middleware
     app.use((err, req, res, next) => {
       console.error(err.stack);
-      res.status(500).send("Something wemt wrong!");
+      res.status(500).send("Something went wrong!");
     });
 
     app.listen(8000, () => {
